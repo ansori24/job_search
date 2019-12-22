@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-900 bg-gray-200">
-    <div class="flex">
+    <div class="flex" id="app">
         <!-- Sidebar -->
         <nav class="hidden w-1/5 px-10 py-8 bg-white lg:flex-col lg:flex">
             <div>
@@ -168,6 +168,12 @@
                 <div class="text-sm text-gray-600">4.6 - 8,639 reviews</div>
             </div>
         </aside>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <script>
+            new vue({
+                el: '#app'
+            })
+        </script>
     </div>
 </body>
 </html>
