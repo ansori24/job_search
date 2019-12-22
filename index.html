@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="build/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-900 bg-gray-200">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="flex flex-col w-1/5 px-10 py-8 bg-white">
+            <svg class="w-8 h-8 text-blue-600 fill-current" viewBox="0 0 24 24">
+                <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+            <ul class="flex-1 mt-16">
+                <li class="my-4 text-xl font-bold">
+                    <a href="#">Browse</a>
+                </li>
+                <li class="my-4 text-xl font-bold">
+                    <a href="#">Your Profile</a>
+                </li>
+                <li class="my-4 text-xl font-bold">
+                    <a href="#">Community</a>
+                </li>
+                <li class="my-4 text-xl font-bold">
+                    <a href="#">Jobs</a>
+                </li>
+                <li class="my-4 text-xl font-bold">
+                    <a href="#">More</a>
+                </li>
+            </ul>
+
+            <a class="font-bold text-red-500" href="#">Log Out</a>
+
+        </div>
+        <!-- Content -->
+        <div class="w-1/2 h-screen px-12 py-16 overflow-y-scroll">
+            <!-- Search -->
+            <div class="flex items-center w-full pr-6 bg-white rounded-full shadow-lg">
+                <div class="flex items-center px-4 py-4 text-blue-600 border-r border-gray-300">
+                    <svg class="w-5 h-5 fill-current " viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                    </svg>
+                    <span class="ml-2 font-semibold">Anywhere</span>
+                </div>
+                <input class="w-full px-4 py-3 outline-none" type="text" placeholder="Search by title, company, or keywords...">
+                <svg class="w-8 h-8 text-gray-500 fill-current" viewBox="0 0 24 24" width="24" height="24">
+                    <path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
+                </svg>
+            </div>
+            <!-- Pills -->
+            <div class="flex items-center w-full mt-4 -mx-2">
+                <a class="px-4 py-3 m-2 text-sm font-semibold text-blue-600 bg-white bg-gray-300 border border-blue-400 rounded-full" href="#">UX Design</a>
+                <a class="px-4 py-3 m-2 text-sm font-semibold text-gray-700 bg-white border border-gray-400 rounded-full" href="#">Interaction Design</a>
+                <a class="px-4 py-3 m-2 text-sm font-semibold text-blue-600 bg-white bg-gray-300 border border-blue-400 rounded-full" href="#">Product Design</a>
+                <a class="px-4 py-3 m-2 ml-auto text-sm font-semibold text-gray-700 bg-white rounded-full " href="#">
+                    <svg class="w-6 h-6 text-blue-600 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M4 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm8 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex items-center justify-between mt-8">
+                <div class="text-sm font-semibold">
+                    <span class="text-gray-900">Showing :</span>
+                    <span class="text-blue-600">Full time Jobs</span>
+                </div>
+                <div class="text-sm font-semibold">
+                    <span>Job Alerts</span>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex items-center justify-between p-6 mt-6 bg-white rounded-lg shadow-lg">
+                    <img class="self-start w-12 h-12 rounded-full" src="img/airbnb.png">
+                    <div class="flex-1 ml-6">
+                        <h3 class="text-xl font-semibold">Airbnb</h3>
+                        <span class="block text-sm font-semibold text-gray-600">Visual designer</span>
+                        <span class="block text-sm text-gray-600">3 days ago &middot; 6 applied</span>
+                    </div>
+                    <span class="text-sm font-semibold tracking-wide text-blue-600">Beijing, China</span>
+                </div>
+                <div class="p-6 mt-6 bg-white rounded-lg shadow-lg">
+                    <div class="flex items-center justify-between ">
+                        <img class="self-start w-12 h-12 rounded-full" src="img/google.jpg">
+                        <div class="flex-1 ml-6">
+                            <h3 class="text-xl font-semibold">Google</h3>
+                            <span class="block text-sm font-semibold text-gray-600">UX Design Lead, Next Billion User</span>
+                            <span class="block text-sm text-gray-600">3 days ago &middot; 6 applied</span>
+                        </div>
+                        <span class="text-sm font-semibold tracking-wide text-blue-600">Singapore</span>
+                    </div>
+                    <div class="py-2 mt-4 border-t border-gray-400">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-700">Other position at google</span>
+                            <a class="text-sm font-semibold text-blue-600" href="#">View All</a>
+                        </div>
+                        <div class="flex mt-4 -mx-2">
+                            <div class="w-64 p-4 mx-2 border border-gray-400 rounded-lg">
+                                <h5 class="block text-sm font-semibold">Visual designer, Graphic designer</h5>
+                                <span class="block text-sm">Singapore</span>
+                            </div>
+                            <div class="w-64 p-4 mx-2 border border-gray-400 rounded-lg">
+                                <h5 class="block text-sm font-semibold">Interaction Designer</h5>
+                                <span class="block text-sm">Boulder, CO, USA</span>
+                            </div>
+                            <div class="w-64 p-4 mx-2 border border-gray-400 rounded-lg">
+                                <h5 class="block text-sm font-semibold">Interaction Designer</h5>
+                                <span class="block text-sm">London</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between p-6 mt-6 bg-white rounded-lg shadow-lg">
+                    <img class="self-start w-12 h-12 rounded-full" src="img/spotify.png">
+                    <div class="flex-1 ml-6">
+                        <h3 class="text-xl font-semibold">Spotify</h3>
+                        <span class="block text-sm font-semibold text-gray-600">Senior Product designer</span>
+                        <span class="block text-sm text-gray-600">3 days ago &middot; 6 applied</span>
+                    </div>
+                    <span class="text-sm font-semibold tracking-wide text-blue-600">New York, USA</span>
+                </div>
+                <div class="flex items-center justify-between p-6 mt-6 bg-white rounded-lg shadow-lg">
+                    <img class="self-start w-12 h-12 rounded-full" src="img/ideo.jpg">
+                    <div class="flex-1 ml-6">
+                        <h3 class="text-xl font-semibold">Ideo</h3>
+                        <span class="block text-sm font-semibold text-gray-600">Visual designer</span>
+                        <span class="block text-sm text-gray-600">3 days ago &middot; 8 applied</span>
+                    </div>
+                    <span class="text-sm font-semibold tracking-wide text-blue-600">London, UK</span>
+                </div>
+            </div>
+        </div>
+        <!-- Right -->
+        <div class="flex-1 h-screen px-10 pt-16 overflow-y-scroll bg-white">
+            <div class="text-center">
+                <img class="w-20 h-20 mx-auto rounded-full" src="img/google.jpg">
+                <h2 class="text-2xl font-bold">UX Design Lead,</h2>
+                <div class="text-2xl font-bold">Next Billion Users</div>
+                <div class="my-2 font-semibold text-blue-500">Google, Singapore</div>
+                <div class="flex items-center justify-center my-6 font-bold text-blue-500">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M12 18.62l-6.55 3.27A1 1 0 0 1 4 21V4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v17a1 1 0 0 1-1.45.9L12 18.61zM18 4H6v15.38l5.55-2.77a1 1 0 0 1 .9 0L18 19.38V4z"/>
+                    </svg>
+                    <span class="ml-1 text-lg">Saved</span>
+                </div>
+                <button class="px-20 py-3 font-semibold text-white bg-blue-400 rounded-full">Apply</button>
+            </div>
+            <div class="py-5 my-5 border-t border-b border-gray-300">
+                <div class="my-2 font-semibold text-gray-800">Minimum Qualifications : </div>
+                <ul class="ml-4 text-sm leading-relaxed text-gray-700 list-disc">
+                    <li class="mb-3">BA/BS degree in Design (e.g., interaction, graphic, visual communications, product, industrial), 
+                        HCI, CS, or Related field or equivalent practical experience</li>
+                    <li class="mb-3">5 Year of experience in related field</li>
+                    <li class="mb-3">Experience implementing visual design system across a range of platform in an iterative development environtment</li>
+                    <li class="mb-3">Experience collaaborating with multidiciplinary UX and/or product teams (motion, interaction, UX research, Enginering, UX Writter) 
+                        on tecnical implementation</li>
+                </ul>
+                <a class="inline-block mt-3 ml-4 font-semibold text-blue-500" href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
